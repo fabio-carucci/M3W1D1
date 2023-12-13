@@ -1,0 +1,93 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron */
+
+div.jumbotron h1 {
+    color:rebeccapurple;
+}
+
+/* ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar */
+
+nav.nav > span {
+    color: teal;
+}
+
+/* ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+
+div.jumbotron a {
+    text-decoration: overline;
+}
+
+/* ESERCIZIO 4) Crea un selettore per selezionare il primo blog post */
+
+main.container h3 + div.blog-post {
+    background-color: bisque;
+}
+
+/* ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
+
+main.container h3 + div.blog-post hr {
+    background-color: red;
+}
+
+/* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar */
+
+nav.nav :nth-child(even) {
+    border: 2px dotted darkcyan;
+}
+
+/* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
+
+aside div.p-4 ol.list-unstyled.mb-0 li {
+    text-align: end;
+}
+
+/* ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post */
+
+div.blog-post:nth-of-type(2) h2 + p a {
+    color: white;
+    background-color: blue;
+    border: 1px dashed yellow;
+    padding: 3px;;
+}
+
+/* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
+
+div.blog-post:last-of-type ul li:nth-child(2) {
+    text-decoration: underline;
+} 
+
+/* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
+
+body > a {
+    letter-spacing: 3px;
+}
+
+/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
+
+main.container nav a[class*=secondary] {
+    color: black;
+    font-size: 1.2em;
+    opacity: 1;
+}
+
+/* ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer */
+
+body > footer a:last-child {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5em;
+}
+
