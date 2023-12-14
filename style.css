@@ -91,3 +91,8 @@ body > footer a:last-child {
     font-size: 0.5em;
 }
 
+/* EXTRA 1: */
+
+aside div.p-4:last-child ol li:nth-child(2) a{
+    color: red;
+}
